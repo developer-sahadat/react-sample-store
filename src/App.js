@@ -1,11 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './All-components/Header/Header';
+import Main from './All-components/Main/Main';
+
 
 function App() {
   return (
-    <div className="App">
-    
+    <div className='main-section'>
+      <Header></Header>
+      <Main></Main>
     </div>
   );
 }

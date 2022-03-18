@@ -1,0 +1,24 @@
+.product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .product {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .product {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
