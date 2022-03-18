@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Product from './Single-products/Product';
 import './products.css'
 
-const Products = () => {
+const Products = (props) => {
     const [products,setProducts]=useState([])
     useEffect(()=>{
         fetch('https://fakestoreapi.com/products')
@@ -18,7 +18,7 @@ const Products = () => {
                <div className="container product p-4">
                  
                  {
-                        products.map(product=><Product product={product} key={product.id}></Product>)
+                        products.map(product=><Product product={product} key={product.id} update={props.updateCount}></Product>)
                    }
                 
                </div>

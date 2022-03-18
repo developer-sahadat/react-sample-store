@@ -8,7 +8,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div>
            <section className='bg-light shadow'>
@@ -21,7 +21,7 @@ const Header = () => {
                             <li>Home</li>
                             <li>Products </li>
                             <li>Contact Us</li>
-                            <li>Cart</li>
+                            <li>Cart <sup>{props.counts}</sup></li>
                             <li>FAQ</li>
                         </ul>
 

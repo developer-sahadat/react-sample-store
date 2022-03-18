@@ -1,10 +1,10 @@
 import React from 'react';
 import Products from './Products/Products';
 
-const Main = () => {
+const Main = (props) => {
     return (
         <div>
-            <Products></Products>
+            <Products updateCount={props.countUpdate}></Products>
         </div>
     );
 };
